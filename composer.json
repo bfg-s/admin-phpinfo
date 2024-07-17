@@ -12,7 +12,7 @@
     "prefer-stable": true,
     "require": {
         "php": "^8.0|^8.1",
-        "bfg/admin": "^5.3.8|^6.0"
+        "bfg/admin": "^6.4"
     },
     "require-dev": {},
     "autoload": {

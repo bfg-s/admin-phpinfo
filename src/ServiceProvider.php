@@ -21,44 +21,39 @@ class ServiceProvider extends ExtendProvider
      * Extension ID name
      * @var string
      */
-    public static $name = "bfg/admin-phpinfo";
+    public static string $name = "bfg/admin-phpinfo";
 
     /**
      * Extension call slug
      * @var string
      */
-    static $slug = "bfg_admin_phpinfo";
+    static string $slug = "bfg_admin_phpinfo";
 
     /**
      * Extension description
      * @var string
      */
-    public static $description = "Show php information in bfg admin";
+    public static string $description = "Show php information in bfg admin";
 
     /**
      * @var string
      */
-    protected $navigator = Navigator::class;
+    protected string $navigator = Navigator::class;
 
     /**
      * @var string
      */
-    protected $install = Install::class;
+    protected string $install = Install::class;
 
     /**
      * @var string
      */
-    protected $uninstall = Uninstall::class;
-
-    /**
-     * @var string
-     */
-    protected $permissions = Permissions::class;
+    protected string $uninstall = Uninstall::class;
 
     /**
      * @var ConfigExtensionProvider|string
      */
-    protected $config = Config::class;
+    protected string|ConfigExtensionProvider $config = Config::class;
 
     /**
      * @return void
